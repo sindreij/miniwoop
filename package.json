@@ -1,0 +1,27 @@
+{
+  "name": "miniwoop",
+  "version": "0.1.0",
+  "description": "Example messaging app using Redux",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --port 3000 --progress --colors"
+  },
+  "author": "Sindre Johansen",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.1.2",
+    "babel-preset-react": "^6.1.2",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "webpack": "^1.12.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.2",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-2": "^6.1.2"
+  }
+}
