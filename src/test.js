@@ -5,10 +5,16 @@ import store from './store'
 
 console.log(store.getState());
 
+let output = document.getElementById('output');
+
 // Every time the state changes, log it
-let unsubscribe = store.subscribe(() =>
-  console.log(store.getState())
-)
+let unsubscribe = store.subscribe(() => {
+    output.innerHTML = output.innerHTML + 
+        '<div class="box"><pre>' +
+        JSON.stringify(store.getState(), null, 4) + 
+        '</div>';
+  console.log(store.getState());
+})
 
 // Dispatch some actions
 store.dispatch(addMessage('Hello World', '#redux'));
